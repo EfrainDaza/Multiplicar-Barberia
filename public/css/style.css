@@ -229,7 +229,9 @@ main .formularios{
 .botonform:hover{
     background:  #d98a58
 }
-
+.errores ul li {
+    color: red;
+}
 @media (min-width : 800px){
     .menu-hamburgesa{
         display: none;

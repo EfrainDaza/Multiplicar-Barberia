@@ -43,7 +43,13 @@
             </div>
     <main>
         <div><h1> REGISTRATE</h1></div>
+        
             <form class="formularios" action="/" method="GET">
+                <div class="errores">
+                    <ul>
+        
+                    </ul>
+                </div>
                 <div>
                     <label class="text-label" for="nombre">Nombre:</label>
                     <input class="text-field" type="text" name="nombre" id="nombre" placeholder="Nombre">
@@ -68,16 +74,16 @@
                 </div>
                 <div>
                     <label class="text-label" for="contrasenia">Contraseña:</label>
-                    <input class="text-field" type="password" name="Contrasenia" id="contrasenia" placeholder="Contraseña">  
+                    <input class="text-field" type="password" name="contrasenia" id="contrasenia" placeholder="Contraseña">  
                 </div>
                 <div>
                     <label class="text-label" for="confirContra">Confirmar Contraseña:</label>
-                    <input class="text-field" type="password" name="confirContra" placeholder="Confirmar Contraseña">
+                    <input class="text-field" type="password" name="confirContra" id="confirContra" placeholder="Confirmar Contraseña">
                 </div>
                     
                 <div>
                     <button class="botonform botonsubmit" type="submit">Registrar</button>
-                    <button class="botonform botonreset"type="reset">Cancelar</button>
+                    
                 </div>
                 
             </form>
@@ -107,6 +113,7 @@
                 </div>
                 <h5>Copyright © 1999-2023 || BARBER </h5>
     </footer>   
-    <script src="../public/js/register.js" type="text/javascript"></script>
+    <script src="../public/js/register.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </body>
 </html>
