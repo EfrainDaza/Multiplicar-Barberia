@@ -27,9 +27,7 @@
                             <li>
                                 <a href="#">CONTACTO</a>
                             </li>
-                            <li>
-                                <a href="#">PRODUCTOS</a>
-                            </li>
+
                             <li class="linksUser">
                                 <a href="../views/login.html"><i class="fa-solid fa-user" style="color: #00225c;"></i> LOGIN</a>
                             </li>
@@ -47,32 +45,38 @@
         <div><h1> REGISTRATE</h1></div>
             <form class="formularios" action="/" method="GET">
                 <div>
-                    <input class="text-field" type="text" name="Nombre" placeholder="Nombre">
+                    <label class="text-label" for="nombre">Nombre:</label>
+                    <input class="text-field" type="text" name="nombre" id="nombre" placeholder="Nombre">
                 </div>
                 <div>
-                    <input class="text-field" type="text" name="Apellido" placeholder="Apellido">
+                    <label class="text-label" for="apellido">Apellido:</label>
+                    <input class="text-field" type="text" name="apellido" id="apellido" placeholder="Apellido">
                 </div>
                 <div>
-                    <input class="text-field" type="email" name="E-mail" placeholder="E-mail">
+                    <label class="text-label" for="email">E-mail:</label>
+                    <input class="text-field" type="email" name="email" id="email" placeholder="E-mail">
                 </div>
                 <div>
-                    <input class="text-field" type="text" name="Domicilio" placeholder="ej: Calle 13 N191">
+                    <label class="text-label" for="domcilio">Domicilio:</label>
+                    <input class="text-field" type="text" name="domicilio" id="domicilio" placeholder="ej: Calle 13 N191">
                 </div>
             
                 
                 <div>
-                    <label for="Foto de Perfil">Foto de Usuario</label>
-                    <input type="file" name="Foto de Perfil" id="Foto de Perfil">
+                    <label class="text-label" for="Foto de Perfil">Foto de Usuario</label>
+                    <input class="text-field" type="file" name="fotoRegistro" id="fotoRegistro">
                 </div>
                 <div>
-                    <input class="text-field" type="password" name="Contraseña" placeholder="Contraseña">  
+                    <label class="text-label" for="contrasenia">Contraseña:</label>
+                    <input class="text-field" type="password" name="Contrasenia" id="contrasenia" placeholder="Contraseña">  
                 </div>
                 <div>
-                    <input class="text-field" type="password" name="Confirmar Contraseña" placeholder="Confirmar Contraseña">
+                    <label class="text-label" for="confirContra">Confirmar Contraseña:</label>
+                    <input class="text-field" type="password" name="confirContra" placeholder="Confirmar Contraseña">
                 </div>
                     
                 <div>
-                    <button class="botonform botonsubmit" type="submit">Enviar</button>
+                    <button class="botonform botonsubmit" type="submit">Registrar</button>
                     <button class="botonform botonreset"type="reset">Cancelar</button>
                 </div>
                 
@@ -103,5 +107,6 @@
                 </div>
                 <h5>Copyright © 1999-2023 || BARBER </h5>
     </footer>   
+    <script src="../public/js/register.js" type="text/javascript"></script>
 </body>
 </html>

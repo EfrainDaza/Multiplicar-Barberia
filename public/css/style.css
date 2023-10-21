@@ -178,15 +178,23 @@ main .crearCuenta{
     margin-bottom: 20px;
 }
 .text-cuenta input{
-    font-size: 20px;
-    margin-top: 5px;
-    margin-bottom: 5px;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
 }
 .botonCuenta{
-    width: 10vw;
-    height: 2vw;
-    background-color: #ed6009;
-    margin-top: 10px;
+    width: 100%;
+    background:  #ed6009;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+  
+    border-radius: 5px;
+    cursor: pointer; 
+}
+.botonCuenta:hover{
+    background:  #d98a58
 }
 
 main .formularios{
@@ -197,15 +205,29 @@ main .formularios{
     margin-bottom: 20px;
 }
 .text-field{
-    font-size: 20px;
-    margin-top: 5px;
-    margin-bottom: 5px;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.text-label{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: flex-start;
 }
 .botonform{
-    width: 10vw;
-    height: 2vw;
     background-color: #ed6009;
-    margin-top: 10px;
+
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+
+    border-radius: 5px;
+    cursor: pointer;
+}
+.botonform:hover{
+    background:  #d98a58
 }
 
 @media (min-width : 800px){
