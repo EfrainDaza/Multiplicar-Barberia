@@ -21,15 +21,12 @@ header nav {
 header .logo{
     cursor: pointer;
     margin-right: auto;
-
-
 }
 header .logo img{
     width: 15vw;
 }
 header nav ul{
-    list-style: none;
-  
+    list-style: none;  
 }
 header nav ul li{
     transition: all  0.3s;
@@ -55,6 +52,7 @@ header nav ul li a:hover{
     padding: 10px;
     margin: 10px 0px 20px 0px;
     border-radius: 5px;
+    color: #ed9609
 }
 
 main div h1{
@@ -232,9 +230,11 @@ main .formularios{
 .errores ul li {
     color: red;
 }
-@media (min-width : 800px){
+
+@media(min-width: 769px){
     .menu-hamburgesa{
         display: none;
+
     }
     
     
