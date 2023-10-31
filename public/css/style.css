@@ -10,8 +10,6 @@ header{
     background-image: url(../image/header.jpeg);
     background-size: cover;
     width: 100vw;
-
-
 }
 
 header nav{
@@ -29,11 +27,13 @@ header .logo img{
 /* para que desaparesca los link en menos de 700px*/
 header nav ul{
     display: none;
+    margin-right: 22px;
 }
 header nav ul li{
     transition: all  0.3s;
     display: inline-block;
     padding: 0px 10px;
+
 }
 header nav ul li:hover{
     transform: scale(1.2);
@@ -52,7 +52,7 @@ header nav ul li a:hover{
 header nav .menu-hamburguesa{
     background-color: #ed6009;
     padding: 5px;
-    margin-right: 5px;
+    margin-right: 15px;
     border-radius: 5px;
     font-size: 20px;
 
