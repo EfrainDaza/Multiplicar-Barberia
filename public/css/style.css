@@ -9,14 +9,15 @@ body{
 header{
     background-image: url(../image/header.jpeg);
     background-size: cover;
-    width: 99vw;
-    height: 25vw;
+    width: 100vw;
+
 
 }
-header nav {
-    display: flex;
-    justify-content:flex-end;
 
+header nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 header .logo{
     cursor: pointer;
@@ -25,8 +26,9 @@ header .logo{
 header .logo img{
     width: 15vw;
 }
+/* para que desaparesca los link en menos de 700px*/
 header nav ul{
-    list-style: none;  
+    display: none;
 }
 header nav ul li{
     transition: all  0.3s;
@@ -47,12 +49,13 @@ header nav ul li a:hover{
     color: #fff;
 }
 
-.menu-hamburgesa{
-    font-size: 20px;
-    padding: 10px;
-    margin: 10px 0px 20px 0px;
+header nav .menu-hamburguesa{
+    background-color: #ed6009;
+    padding: 5px;
+    margin-right: 5px;
     border-radius: 5px;
-    color: #ed9609
+    font-size: 20px;
+
 }
 
 main div h1{
@@ -232,64 +235,23 @@ main .formularios{
 }
 /* menu hamburguesa - responsive*/
 
-header .overlay{
-    height: 100%;
-    width: 0%;
-    position: fixed;
-    z-index: 1;
-    left: 0;
-    top: 0;
-    background-color: #ed6009;
-    overflow: hidden;
-    transition: all 0.3s ease 0;
-}
-header .overlay .overlay-contenido{
-    display: flex;
-    height: 100%;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
 
-}
-
-header .overlay a{
-    padding: 15px;
-    font-size: 36px;
-    display: block;
-    transition: all 0.3s ease 0;
-    font-weight: 700;
-    color: #fff;
-
-}
-header .overlay a:hover,
-header .overlay a:focus{
-    color: #d98a58;
-
-}
-header .overlay .menuCloseH{
-    position: absolute;
-    top: 20px;
-    right: 45px;
-    font-size: 65px;
-
-}
-header .menuOpenH{
-    display: inherit;
-}
 
 
 @media(min-width: 769px){
-    header .overlay a{
-        font-size: 20px;
-
+    header{
+        height: 25vw;
     }
-    header .overlay .menuCloseH{
-        font-size: 40px;
-        top: 15px;
-        right: 35px;
-
+    header nav {
+    display: flex;
+    align-items: flex-start;
     }
-    .menu-hamburgesa{
+    header nav ul {
+        list-style: none; 
+        display: flex;
+    }
+
+    .menu-hamburguesa{
         display: none;
 
     }
