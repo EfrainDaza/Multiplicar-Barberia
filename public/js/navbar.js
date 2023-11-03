@@ -1,11 +1,18 @@
+window.addEventListener("load", function(){
 
+    const nav = document.querySelector("#nav");
+    const abrir = document.querySelector("#abrir");
+    const cerrar = document.querySelector("#cerrar");
+    
+    abrir.addEventListener("click", () => {
+        nav.classList.add("visible")
+    })
+    cerrar.addEventListener("click", () => {
+        nav.classList.remove("visible")
+    })
 
-function openNav(){
-        document.getElementById("menuMobile").style.width = "100%";// que se abra al 100% el menu
-    }
-function closeNav(){
-        document.getElementById("menuMobile").style.width = "0%";// se cierra por que le pasamos un 0% de ancho!
-    }
+});
+
 
 
 
