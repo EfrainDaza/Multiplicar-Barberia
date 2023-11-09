@@ -140,22 +140,29 @@ header{
     .seccion-barber{
        display: flex;
        justify-content: center;
-       background-color: #ed9609;
+       background: linear-gradient(to bottom, #000000, #434343);
+       /*poner un linea fina*/
     }
+    .h2-title{
+        margin: 3rem 0;
+        font-size: 4em;
+        text-align: center;
+        color: #fff;
+    }
+
     .barber-img{
-        margin: 3.5rem 0;
+        margin: 4rem 0;
         border-radius: 50%;
         width: 40rem;
         height: 40rem;
-        border: 1px solid #ffffff72;
-        box-shadow: 1px 10px 13px 3px rgba(0, 0, 0, 0.53);
+        transition: all 0.3s;
+        box-shadow: 1px 1px 30px 1px  rgba(255, 111, 21, 0.4);
+     
     }
     .barber-img:hover{
         transform: scale(1.1);
+        box-shadow: 1px 1px 40px 1px  rgb(255, 111, 21);
     }
-    .h2-title{
-        margin-top: 3rem;
-        font-size: 4em;
-        text-align: center;
-    }
+    
+
 }
