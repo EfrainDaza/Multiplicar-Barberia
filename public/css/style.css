@@ -226,4 +226,10 @@ header{
     .galeria .punto.activo{
         background-color: #ed9609;
     }
+
+    /*FOOTER*/
+    footer{
+        background: linear-gradient(180deg,#ed9609 , #a1844e);
+        text-align: center;
+    }
 }
