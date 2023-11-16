@@ -179,9 +179,10 @@ figure:nth-child(2){
     justify-content: space-between;
     text-align: center;
     height: 20rem;
+    padding-top: 1rem;
  }
  footer div{
-    width: 25%;
+    width: 20%;
  }
  .title_footer{
     font-size: 2rem;
@@ -189,53 +190,141 @@ figure:nth-child(2){
  footer div a{
     font-size: 1.5rem;
  }
-.fa-square-facebook{
-    font-size: 3rem;
-    color: #3b5998 ;
-    margin: 0 1rem;
-    background-color: #fff;
+ .iconos_social{
+    margin: 1rem;
+    transition: all 0.3s;
  }
- .fa-square-x-twitter{
-   color: #14171A;
-   font-size: 3rem;
-   background-color: #fff;
-   border-radius: 15%;
-   width: 2.5rem;
-   height: 2.5rem;
+ .twitter{
+    width: 2.5rem;
+    border-radius: 30%;
+ }
+ .insta{
+    width: 2.5rem;
+    border-radius: 30%;
+ }
+ .facebook{
+    width: 2.5rem;
+    border-radius: 50%;
+ }
+ .twitter:hover,.insta:hover,.facebook:hover{
+    transform: scale(1.2);
+    background-color: #0000003e;
+ }
+ .whatsap,.correo{
+    width: 1.5rem;
+    margin: 0 0.5rem;
+ }
+ .ubicacion{
+    width: 1.5rem;
  }
  
- .fa-instagram{
-    font-size: 3rem;
-    color: #fff;
-    background:radial-gradient(
-        circle at 33% 100%,
-        #fed373 4%,
-        #f15245 30%,
-        #d92e7f 62%,
-        #9b36b7 85%,
-        #515ecf);
-    border-radius: 30%;
-    width: 3.5rem;
-    height: 3rem;
-
- }
-.fa-whatsapp{
-    font-size: 2rem;
-    color: #25d365cd;
- }
- .fa-envelope{
-    font-size: 2rem;
-    color: #000000;
- }
- footer div p{
+ .parrafo_footer{
+    display: flex;
+    justify-content: center;
     font-size: 1.5rem;
+ }
+ .contenedor_logo_footer{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
 
+ }
+ 
+ .logo_footer{
+    width: 10rem;
+    height: 10rem;
+    background-color: rgba(169, 169, 169, 0.282);
+    border-radius: 50%;
+    margin-top: 1rem;
+    margin-left: 1rem;
  }
  .copyright_footer{
     display: flex;
     align-items: flex-end;
     
- }
+}
+/*VISTA LOGIN */
+.title_login{
+    background-color:#ed9609;
+    color: black;
+    text-align: center; 
+    font-size: 3.5rem
+}
+.crearCuenta{
+    background-color: #ed96094f;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem 0;
+}
+.text-cuenta{
+    margin: 1rem 0;
+}
+.text-cuenta input{
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ed9609;
+    border-radius: 5px;
+}
+.botttonCuenta{
+    margin: 1rem 0;
+}
+.botonCuenta{
+    width: 100%;
+    background-color:  #ed9609;
+    color: #fff;
+    border: 1px solid #ed9609;
+    padding: 1rem 2rem;
+    border-radius: 0.5rem;
+    cursor: pointer; 
+}
+.botonCuenta:hover{
+    background-color:  #ed960983
+}
+/* REGISTER */
+
+.title_register{
+    background-color:#ed9609;
+    color: black;
+    text-align: center; 
+    font-size: 3.5rem
+}
+.formularios{
+    background-color: #ed96094f;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem 0;
+}
+.text-label{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: flex-start;
+    font-size: 1.5rem;
+}
+.text-field{
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ed9609;
+    border-radius: 5px;
+}
+.botonform{
+    background-color: #ed9609;
+    color: #fff;
+    width: 100%;
+    border: 1px solid #ed9609;
+    padding: 1rem 2rem;
+    border-radius: 0.5rem;
+    cursor: pointer; 
+}
+.botonform:hover{
+    background:  #d98a58
+}
+.errores{
+    color: red;
+    font-size: 1.5rem;
+}
 /* menu hamburguesa*/
 .abrir-menu,
 .cerrar-menu{
@@ -413,34 +502,5 @@ figure:nth-child(2){
     }
 
     /*FOOTER*/
-    footer{
-     
-        text-align: center;
-    }
-    .title_footer{
-        font-size: 3rem;
-    }
-    .parrafo_footer{
-        font-size: 2rem;
-    }
-    .links_footer{
-        font-size: 2rem;
-        list-style: none;
-        transition: all 0.3s ;
-        color: #000000;
-    }
-    .links_footer:hover{
-        color: #ed9609;
-    }
-    .link_footer{
-        transition: all 0.3s;
-    }
-    .link_footer:hover{
-        transform: scale(1.2);
-        width: 100%;
-        background-color: rgba(240, 248, 255, 0.461);
-    }
-    .copyright_footer{
-        font-size: 1.5rem;
-    }
+   
 }
