@@ -411,6 +411,11 @@ figure:nth-child(2){
     display: flex;
     flex-direction: column;
 }
+.contacto_link{
+    margin: 2rem 0;
+    font-size: 1.5rem;
+    color: #000;
+} 
 .contacto_campo{
     display: grid;
     width: 100%;
@@ -422,11 +427,19 @@ figure:nth-child(2){
     align-items: center;
     justify-content: center;
 }
-.campo_name{
-
+.campo_name input{
+    border: none;
+    border-bottom: 1px solid #000
 }
-.campo_email{
-    background-color: red;
+.campo_name label{
+    font-size: 1.5rem;
+}
+.campo_email input{
+    border: none;
+    border-bottom: 1px solid #000
+}
+.campo_email label{
+    font-size: 1.5rem;
 }
 .email_input{
     width: 100%;
@@ -435,22 +448,25 @@ figure:nth-child(2){
 }
 .campo_mensseger{
     grid-column: 1/3;
-    background-color: red;
+
     width: 30rem;
     height: 25rem;
 }
 .label__msj_ct{
-   background-color: #000000;
-   color: #ebebeb;
+   height: 60rem;
+   font-size: 1.5rem;
 }
 .input_msj_ct{
-    width: 100%;
+    width: 40rem;
     height: 100%;
     border: none;
-    border-bottom: 1px solid #000000;
+    border-bottom: 1px solid #000
 }
 .campo_boton{
+    grid-column: 1/3;
  color: red;
+ width: 1/3;
+ text-align: center;
 }
 /* menu hamburguesa*/
 .abrir-menu,
