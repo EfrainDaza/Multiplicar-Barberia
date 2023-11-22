@@ -412,7 +412,7 @@ figure:nth-child(2){
     flex-direction: column;
 }
 .contacto_link{
-    margin-top: 5rem;
+    margin: 2.5rem 0;
     font-size: 1.5rem;
     color: #000;
 } 
@@ -434,22 +434,21 @@ figure:nth-child(2){
 }
 .campo_name input{
     border: none;
-    border-bottom: 1px solid #ed9609
+    border-bottom: 1px solid #ed9609;
+    outline: none;
+    padding: 0.5rem;
 }
 .campo_name label{
     font-size: 1.5rem;
 }
 .campo_email input{
     border: none;
-    border-bottom: 1px solid #ed9609
+    border-bottom: 1px solid #ed9609;
+    outline: none;
+    padding: 0.5rem;
 }
 .campo_email label{
     font-size: 1.5rem;
-}
-.email_input{
-    width: 100%;
-    border: none;
-    border-radius: none;
 }
 .campo_mensseger{
     grid-column: 1/3;
@@ -464,7 +463,8 @@ figure:nth-child(2){
     width: 100%;
     height: 100%;
     border: none;
-    border-bottom: 1px solid #ed9609
+    border-bottom: 1px solid #ed9609;
+    outline: none;
 }
 .boton{
  grid-column: 1/3;
@@ -655,7 +655,15 @@ figure:nth-child(2){
     .galeria .punto.activo{
         background-color: #ed9609;
     }
-
+    .section_contacto{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .mapa_contacto{
+        width: 70%;
+    }
     /*FOOTER*/
    
 }
